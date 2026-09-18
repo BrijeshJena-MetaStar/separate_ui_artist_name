@@ -1,0 +1,29 @@
+{
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "rewrites": [
+    {
+      "source": "/store/assets/:path*",
+      "destination": "/assets/:path*"
+    },
+    {
+      "source": "/store/favicon.ico",
+      "destination": "/favicon.ico"
+    },
+    {
+      "source": "/store",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/store/:path*",
+      "destination": "/index.html"
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/",
+      "destination": "/store/shaanWorld",
+      "permanent": false
+    }
+  ]
+}
